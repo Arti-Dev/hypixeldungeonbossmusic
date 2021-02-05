@@ -1,0 +1,16 @@
+[
+{
+  "modid": "dungeonbossroommusic",
+  "name": "DungeonBossRoomMusic",
+  "description": "Replaces music in the Hypixel Dungeons Boss Room",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Arti_Creep"],
+  "credits": "no",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
