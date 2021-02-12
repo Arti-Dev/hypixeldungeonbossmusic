@@ -39,11 +39,11 @@ public class Listeners {
     		checkingoff = true;
     		return;
     	}
-    	if (message.equals("[BOSS] Scarf: This is where the journey ends for you, Adventurers.")
-    			|| message.equals("[BOSS] The Professor: I was burdened with terrible news recently...")
-    			|| message.equals("[BOSS] Thorn: Welcome Adventurers! I am Thorn, the Spirit! And host of the Vegan Trials!")
-    			|| message.equals("[BOSS] Livid: Welcome, you arrive right on time. I am Livid, the Master of Shadows.") 
-    			|| message.equals("[BOSS] Sadan: So you made it all the way here...and you wish to defy me? Sadan?!")
+    	if (message.equals("[BOSS] Scarf : This is where the journey ends for you, Adventurers.")
+    			|| message.equals("[BOSS] The Professor : I was burdened with terrible news recently...")
+    			|| message.equals("[BOSS] Thorn : Welcome Adventurers! I am Thorn, the Spirit! And host of the Vegan Trials!")
+    			|| message.equals("[BOSS] Livid : Welcome, you arrive right on time. I am Livid, the Master of Shadows.") 
+    			|| message.equals("[BOSS] Sadan : So you made it all the way here...and you wish to defy me? Sadan?!")
     			|| message.equals("[BOSS] Necron: Finally, I heard so much about you. The Eye likes you very much.")) {
     		stopmusic = false;
 	    	new Thread(new Runnable() {
@@ -58,12 +58,12 @@ public class Listeners {
 	    		
 	    	}).start();
 	    	
-    	} else if (message.equals("[BOSS] Scarf: His technique.. is too advanced..")
-    			|| message.equals("[BOSS] Necron: Before I have to deal with you myself.")
+    	} else if (message.equals("[BOSS] Scarf : His technique.. is too advanced..")
+    			|| message.equals("[BOSS] Necron : Before I have to deal with you myself.")
     			|| message.contains("\u2620 Defeated Thorn in")
     			|| message.endsWith("My shadows are everywhere, THEY WILL FIND YOU!!")
-    			|| message.equals("[BOSS] Sadan: NOOOOOOOOO!!! THIS IS IMPOSSIBLE!!")
-    			|| message.equals("[BOSS] Necron: I understand your words now, my master.")) {
+    			|| message.equals("[BOSS] Sadan : NOOOOOOOOO!!! THIS IS IMPOSSIBLE!!")
+    			|| message.equals("[BOSS] Necron : I understand your words now, my master.")) {
     		stopMusic();
     		checkingon = true;
     		Minecraft.getMinecraft().thePlayer.sendChatMessage("/togglemusic");
