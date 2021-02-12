@@ -63,7 +63,7 @@ public class Listeners {
     			|| message.contains("\u2620 Defeated Thorn in")
     			|| message.endsWith("My shadows are everywhere, THEY WILL FIND YOU!!")
     			|| message.equals("[BOSS] Sadan : NOOOOOOOOO!!! THIS IS IMPOSSIBLE!!")
-    			|| message.equals("[BOSS] Necron : I understand your words now, my master.")) {
+    			|| message.equals("[BOSS] Necron: I understand your words now, my master.")) {
     		stopMusic();
     		checkingon = true;
     		Minecraft.getMinecraft().thePlayer.sendChatMessage("/togglemusic");
