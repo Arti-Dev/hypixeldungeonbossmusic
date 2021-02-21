@@ -30,8 +30,8 @@ public class Listeners {
     @SubscribeEvent
     public void ChatReceived(ClientChatReceivedEvent event) throws Exception {
     	String string = Minecraft.getMinecraft().getCurrentServerData().serverIP;
-    	if (!(string.equals("hypixel.net"))) return;
-    	//the player is on hypixel
+    	if (!(string.endsWith("hypixel.net"))) return; // You can't connect to Hypixel using their numeral IP lol
+    	// the player is on hypixel
     	String message = event.message.getUnformattedText();
     	if (message.equals("[BOSS] The Watcher: You have proven yourself. You may pass.")) {
     		//time to check whether the in-game music is off
@@ -39,6 +39,7 @@ public class Listeners {
     		checkingoff = true;
     		return;
     	}
+    	// Most boss messages have a space on each side of the colon because Hypixel has them for some reason..?
     	if (message.equals("[BOSS] Scarf : This is where the journey ends for you, Adventurers.")
     			|| message.equals("[BOSS] The Professor : I was burdened with terrible news recently...")
     			|| message.equals("[BOSS] Thorn : Welcome Adventurers! I am Thorn, the Spirit! And host of the Vegan Trials!")
