@@ -31,6 +31,7 @@ public class Listeners {
     public void ChatReceived(ClientChatReceivedEvent event) throws Exception {
     	String string = Minecraft.getMinecraft().getCurrentServerData().serverIP;
     	if (!(string.endsWith("hypixel.net"))) return; // You can't connect to Hypixel using their numeral IP lol
+    	// Credit TrollyLoki via Discord
     	// the player is on hypixel
     	String message = event.message.getUnformattedText();
     	if (message.equals("[BOSS] The Watcher: You have proven yourself. You may pass.")) {
