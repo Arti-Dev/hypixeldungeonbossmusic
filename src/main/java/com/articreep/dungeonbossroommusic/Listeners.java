@@ -1,26 +1,13 @@
 package com.articreep.dungeonbossroommusic;
 
 import java.io.File;
-import java.io.IOException;
-
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.FloatControl;
-import javax.sound.sampled.LineUnavailableException;
-
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.audio.SoundManager;
-import net.minecraft.client.multiplayer.WorldClient;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
-import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
-import net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent;
 
 public class Listeners {
 	public static Clip clip = null;
@@ -105,7 +92,6 @@ public class Listeners {
 		// grab files
 		File firstfile = new File("C:\\Users\\boomc\\Music\\dungeondramastart.wav");
 		File finalfile = new File("C:\\Users\\boomc\\Music\\dungeondramaloop.wav");
-		String status = null;
 		clip = AudioSystem.getClip();
         final AudioInputStream firstaudioIn = AudioSystem.getAudioInputStream(firstfile);
         final AudioInputStream finalaudioIn = AudioSystem.getAudioInputStream(finalfile);
