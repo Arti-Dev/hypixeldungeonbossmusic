@@ -42,7 +42,7 @@ public class Listeners {
     	}
     	// Most boss messages have a space on each side of the colon because Hypixel has them for some reason..?
     	if (message.equals("[BOSS] Scarf : This is where the journey ends for you, Adventurers.")
-    			|| message.equals("[BOSS] The Professor : I was burdened with terrible news recently...")
+    			|| message.equals("[BOSS] The Professor: I was burdened with terrible news recently...")
     			|| message.equals("[BOSS] Thorn : Welcome Adventurers! I am Thorn, the Spirit! And host of the Vegan Trials!")
     			|| message.equals("[BOSS] Livid : Welcome, you arrive right on time. I am Livid, the Master of Shadows.") 
     			|| message.equals("[BOSS] Sadan : So you made it all the way here...and you wish to defy me? Sadan?!")
