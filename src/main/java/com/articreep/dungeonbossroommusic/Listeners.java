@@ -48,7 +48,7 @@ public class Listeners {
 	    	}).start();
 	    	
     	} else if (message.equals("[BOSS] Scarf : His technique.. is too advanced..")
-    			|| message.equals("[BOSS] Necron : Before I have to deal with you myself.")
+    			|| message.equals("[BOSS] Necron: Before I have to deal with you myself.")
     			|| message.contains("\u2620 Defeated Thorn in")
     			|| message.endsWith("My shadows are everywhere, THEY WILL FIND YOU!!")
     			|| message.equals("[BOSS] Sadan : NOOOOOOOOO!!! THIS IS IMPOSSIBLE!!")
